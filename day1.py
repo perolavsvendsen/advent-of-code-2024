@@ -23,13 +23,13 @@ def calculate_dists(lefts, rights):
 
 
 def test_part1():
-    lefts, rights = load("day1/data_test.txt")
+    lefts, rights = load("data/day1_test.txt")
     dists = calculate_dists(lefts, rights)
     assert dists == [2, 1, 0, 1, 2, 5]  # sum = 11
 
 
 def solve_part1():
-    lefts, rights = load("day1/data_1.txt")
+    lefts, rights = load("data/day1_data.txt")
     print(f"Part 1: {sum(calculate_dists(lefts, rights))}")
 
 
@@ -46,13 +46,13 @@ def calculate_similarity_score(lefts, rights):
 
 
 def test_part2():
-    lefts, rights = load("day1/data_test.txt")
+    lefts, rights = load("data/day1_test.txt")
     similarity_score = calculate_similarity_score(lefts, rights)
     assert similarity_score == 31
 
 
 def solve_part2():
-    lefts, rights = load("day1/data_1.txt")
+    lefts, rights = load("data/day1_data.txt")
     similarity_score = calculate_similarity_score(lefts, rights)
     print(f"Part 2: {similarity_score}")
 
